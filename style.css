@@ -83,6 +83,7 @@ body {
 .secciones5 i {
 	font-size: 15px;
 	color: rgb(221, 181, 0);
+	cursor: pointer;
 }
 
 .info {
