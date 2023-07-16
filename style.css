@@ -1,0 +1,116 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	background: rgb(67, 16, 67);
+
+	z-index: 3;
+}
+.container {
+	width: 1000px;
+	height: 500px;
+
+	background: white;
+	position: relative;
+	margin-top: 80px;
+	display: flex;
+	justify-content: space-between;
+	border-radius: 1.5rem;
+}
+
+.div {
+	width: 50%;
+}
+.imagen {
+	width: 800px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.caja {
+	position: absolute;
+	top: 170px;
+	left: -9.4%;
+	z-index: 2;
+}
+.women {
+	position: absolute;
+	left: -8%;
+	z-index: 2;
+}
+.sombra {
+	height: 400px;
+	position: absolute;
+	left: -5%;
+}
+.faq {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 30px;
+	padding: 10%;
+}
+
+.secciones1,
+.secciones2,
+.secciones3,
+.secciones4,
+.secciones5 {
+	display: flex;
+	flex-direction: column;
+}
+
+.secciones1:hover,
+.secciones2:hover,
+.secciones3:hover,
+.secciones4:hover,
+.secciones5:hover {
+	color: orange;
+}
+
+.secciones1 i,
+.secciones2 i,
+.secciones3 i,
+.secciones4 i,
+.secciones5 i {
+	font-size: 15px;
+	color: rgb(221, 181, 0);
+}
+
+.info {
+	/* position: absolute; */
+	top: 20px;
+	margin: 5px 0px;
+	left: 0;
+	display: none;
+	font-size: 13px;
+	color: black;
+}
+#info-toggle1,
+#info-toggle2,
+#info-toggle3,
+#info-toggle4,
+#info-toggle5 {
+	display: none;
+}
+#info-toggle1:checked ~ .info,
+#info-toggle2:checked ~ .info,
+#info-toggle3:checked ~ .info,
+#info-toggle4:checked ~ .info,
+#info-toggle5:checked ~ .info {
+	display: flex;
+}
+
+.info-label {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
